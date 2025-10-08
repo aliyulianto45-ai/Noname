@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "license": "ISC",
   "type": "module",
+  "scripts": {
+    "build": "tsc && echo 'Build complete'",
+    "start": "bun run build"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
   "dependencies": {
     "@types/node": "^22.10.2",
-    "javascript-obfuscator": "^4.1.1"
+    "javascript-obfuscator": "^4.1.1",
+    "typescript": "^5.0.0"
   }
 }
